@@ -1,0 +1,166 @@
+/*global*/
+html,body{vertical-align: baseline;font-weight: inherit; font-family:"微软雅黑"; font-style: inherit;font-size: 100%;outline: 0;padding: 0;margin: 0;border: 0;}
+div,p,span,form,iframe,table,td,th,input,textarea,button,label,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6 {margin: 0;padding: 0;}
+h1,h2,h3,h4,h5,h6 {font-size: 100%;font-weight: normal;}
+ul,ol,li,dl {list-style-type: none;}
+em,i,dfn,cite,strong,small {font-style: normal;}
+fieldset,button,input,select,option {vertical-align: middle;font: 12px/18px "", arial, sans-serif;}
+table {border-collapse: collapse;border-spacing: 0;}
+img {border: 0;}
+textarea {resize: none;}
+label {cursor: pointer;}
+/*color*/
+a {text-decoration: none;   }
+a:hover {text-decoration: none;}
+a img, :link img, :visited img {border:0px;} 
+a,img,button,input,textarea,div{-webkit-tap-highlight-color:rgba(255,255,255,0);}
+
+/*分享页面css*/
+.d_foot{
+  display: none;
+  width: 100%;
+  position: fixed;
+  left:0;
+  bottom:0;
+  z-index: 105;
+}
+.d_foot .colse{
+  width: 13px;
+  height: 13px;
+  background: url(../images/img/colse.png) left top no-repeat;
+  background-size: 100%;
+  position: absolute;
+  right: 7px;
+  top:8px;
+  z-index: 22;
+}
+.d_foot_bg{
+  width: 100%;
+  height: 100%;
+  background:#000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  opacity: 0.75;
+}
+.d_foot .d_foot_main{
+  padding: 11px 30px 7px 15px;
+  height: 41px;
+  position: relative;
+  z-index: 10;
+}
+.d_foot .left{
+  width: 41px;
+  height: 41px;
+  background:url(../images/img/foot-logo.png) left top no-repeat;
+  background-size: 100%;
+  float:left;
+  margin-right: 7px;
+}
+.d_foot .text{
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  font-size: 18px;
+  float:left;
+}
+.d_foot a{
+  width:110px;
+  height: 34px;
+  line-height: 34px;
+  margin-top:2px;
+  text-align: center;
+  background: #fff;
+  float: right;
+  color:#39d9ab;
+  font-size:14px;
+  border-radius: 22px;
+}
+.d_foot .share-img{
+  position: absolute;
+  right: 5px;
+  top: -44px;
+}
+/*页面加载图*/
+.stressing{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #fff;
+  z-index: 9999999999999;
+}
+.stressing span{
+  width: 100px;
+  height: 120px;
+  background: url(../images/img/zx-loading.gif) left top no-repeat;
+  background-size: 100px;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  margin-left: -50px;
+  margin-top: -60px;
+}
+
+/*显示PV人数*/
+.draw_people{
+    position: absolute;
+    right: 0;
+    top: 8px;
+    background-color: #FFFFFF;
+    border-top: 2px solid #17b3ca;
+    border-bottom: 2px solid #17b3ca;
+    border-left: 2px solid #17b3ca;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.draw_people p{
+    font-size: 10px;
+}
+
+/*活动页底部显示*/
+p.copyright{
+    text-align: center;
+    color: #FFFFFF;
+    width: 100%;
+    font-size: .7rem;
+    position: absolute;
+    bottom: .5rem;
+}
+
+/*活动结束提示语*/
+.page_1_foot{
+    width: 100%;
+    /* border-radius: 5px; */
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+     color: #fff; 
+    text-align: center;
+    background: #4ebdcd;
+    position: fixed;
+    bottom: -8px;
+    z-index: 100; 
+    display:none; 
+}
+/*toast提示框*/
+.common_tip{padding: 16px 22px; color: #fff; background: #000; opacity: 0.7; position:fixed; left:10%; top: 40%; font-size: 14px; border-radius:8px; display: none; z-index: 10000;margin-left: -45px}
+
+.toast_tip{
+  padding: 16px 28px;
+  color: #282828; 
+  background: #FFF; 
+  position:fixed; 
+  left:10%; 
+  top: 40%; 
+  font-size: 14px;
+  border-top: 5px #555c61 solid;
+  border-bottom-left-radius:8px; 
+  border-bottom-right-radius:8px;
+  display: none; 
+  z-index: 10000;
+  margin-left: -45px;
+  box-shadow: 0px 10px 10px rgba(0,0,0,.5);
+}

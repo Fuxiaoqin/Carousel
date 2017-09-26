@@ -1,0 +1,120 @@
+/*reset*/
+html,body{vertical-align: baseline;font-weight: inherit; font-family:"微软雅黑"; font-style: inherit;font-size: 100%;outline: 0;padding: 0;margin: 0;border: 0;}
+div,p,span,form,iframe,table,td,th,input,textarea,button,label,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6 {margin: 0;padding: 0;}
+h1,h2,h3,h4,h5,h6 {font-size: 100%;font-weight: normal;}
+ul,ol,li,dl {list-style-type: none;}
+em,i,dfn,cite,strong,small {font-style: normal;}
+fieldset,button,input,select,option {vertical-align: middle;font: 12px/18px "", arial, sans-serif;}
+table {border-collapse: collapse;border-spacing: 0;}
+img {border: 0;}
+textarea {resize: none;}
+label {cursor: pointer;}
+/*color*/
+a {text-decoration: none;	}
+a:hover {text-decoration: none;}
+a img, :link img, :visited img {border:0px;} 
+a,img,button,input,textarea,div{-webkit-tap-highlight-color:rgba(255,255,255,0);}
+
+/*global*/
+body{
+    background:url('../images/bg.png') 0 top no-repeat;
+    background-size:100%;
+    /*height: 46.666666rem;*/
+    width: 30rem;
+    max-width: 100%;
+    background-color:#320a76;
+}
+.title_box{
+    position: relative;
+    height: 33rem;
+}
+.lottery_box{
+    height: 14.5rem;
+    position: relative;
+    width:100%;
+}
+.lottery_reward{
+    width: 86%;
+    height: 14.576rem;
+    margin-left:4%;
+    z-index: 2;
+    background:url('../images/winlotteryBg.png') 0 center no-repeat;
+    background-size: 100%;
+ 
+}
+.slideBox{
+    width: 19.8%;
+    overflow: hidden;
+    height: 6.39rem;
+    position: absolute;
+    top: 3.01rem;
+    left: 34.422%;
+    z-index: 6;
+    border-radius: .45rem;
+}
+.slideBox ul{
+    width:100%;
+    height:100%;
+    position: relative;
+    top:0;
+    transition: top .6s linear;
+    -moz-transition: top .6s linear; 
+    -webkit-transition: top .6s linear;
+}
+.lottery_reward li{
+    width:100%;
+    height: 101%;
+}
+.lottery_reward .init{
+    background: url('../images/init.png') top center no-repeat;
+    background-size: 100% 100%;
+}
+.lottery_reward .misslottery{
+    background: url('../images/missLottery.png') top center no-repeat;
+    background-size: 100% 100%;
+}
+.lottery_reward .winlottery{
+    background: url('../images/winLottery.png') top center no-repeat;
+    background-size: 100% 100%;
+}
+.slideBox a{
+    position: absolute;
+    bottom: .5rem;
+    width: 100%;
+    height: 1.2rem;
+    margin: auto;
+    display: none;
+    /*background: red;*/
+}
+.crank_up{
+    width: 4.8rem;
+    height: 7.4rem;
+    z-index: 3;
+    background: url('../images/poleUp.png') center center no-repeat;
+    background-size: 100%;
+    position: absolute;
+    right: 0;
+    top: -1rem;
+}
+.crank_down{
+    width: 4.8rem;
+    height: 7.4rem;
+    z-index: 3;
+    background: url('../images/poleDown.png') center center no-repeat;
+    background-size: 100%;
+    position: absolute;
+    right: 0;
+    top: 6.1rem;
+    display: none;
+}
+.rule{
+    height: 15.4rem;
+    background:url('../images/rule.png') 0 center no-repeat;
+    background-size: 100%;
+    margin:auto;
+    position:relative;
+}
+p.copyright{
+    position:relative;
+    bottom:0;
+}
